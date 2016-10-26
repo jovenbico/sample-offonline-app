@@ -12,6 +12,7 @@ public class IEventTest {
 		EventBus eventBus = new EventBus();
 
 		eventBus.register(new EventHandler());
+		eventBus.register(new AnotherEventHandler());
 
 		eventBus.post(new EventObj(101));
 
