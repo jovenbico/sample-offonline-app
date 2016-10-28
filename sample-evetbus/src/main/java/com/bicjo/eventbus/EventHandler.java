@@ -5,6 +5,7 @@ public class EventHandler implements IEvent {
 	@Override
 	public void fireEvent(EventObj e) {
 		System.out.println("fire event: " + e.getId());
+		e.setFromEventHandler("FIRST_EVENT");
 
 		try {
 			Thread.sleep(3 * 1000);
