@@ -7,21 +7,27 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Button?>
 
-<FlowPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bicjo.javafx.login.LoginController" orientation="VERTICAL"
-	alignment="CENTER" vgap="8" hgap="4">
-
-	<HBox>
-		<Label text="Username: " prefWidth="80" alignment="BASELINE_RIGHT" />
-		<TextField fx:id="usernameText" />
-	</HBox>
-	
-	<HBox>
-		<Label text="Password: " prefWidth="80" alignment="BASELINE_RIGHT" />
-		<PasswordField fx:id="passwordText" />
-	</HBox>
-
-	<HBox nodeOrientation="RIGHT_TO_LEFT">
-		<Button fx:id="loginBtn" text="Login" />
-	</HBox>	
+<FlowPane alignment="CENTER" hgap="4" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0" vgap="8" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.bicjo.javafx.login.LoginController">
+   <children>
+   
+   	<HBox>
+      <children>
+      		<Label alignment="BASELINE_RIGHT" prefWidth="80" text="Username: " />
+      		<TextField fx:id="usernameText" />
+      </children>
+   	</HBox>
+   	
+   	<HBox>
+      <children>
+      		<Label alignment="BASELINE_RIGHT" prefWidth="80" text="Password: " />
+      		<PasswordField fx:id="passwordText" />
+      </children>
+   	</HBox>
+   
+   	<HBox nodeOrientation="RIGHT_TO_LEFT">
+      <children>
+      		<Button fx:id="loginBtn" text="Login" />
+      </children>
+   	</HBox>
+   </children>	
 </FlowPane>
-
