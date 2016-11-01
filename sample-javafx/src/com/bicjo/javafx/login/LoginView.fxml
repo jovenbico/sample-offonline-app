@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<FlowPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bicjo.javafx.login.LoginController" orientation="VERTICAL"
+	alignment="CENTER" vgap="8" hgap="4">
+
+	<HBox>
+		<Label text="Username: " prefWidth="80" alignment="BASELINE_RIGHT" />
+		<TextField fx:id="usernameText" />
+	</HBox>
+	
+	<HBox>
+		<Label text="Password: " prefWidth="80" alignment="BASELINE_RIGHT" />
+		<PasswordField fx:id="passwordText" />
+	</HBox>
+
+	<HBox nodeOrientation="RIGHT_TO_LEFT">
+		<Button fx:id="loginBtn" text="Login" />
+	</HBox>	
+</FlowPane>
+
