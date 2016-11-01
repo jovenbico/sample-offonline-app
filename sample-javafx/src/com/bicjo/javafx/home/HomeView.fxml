@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.FlowPane?>
 
-<FlowPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bicjo.javafx.home.HomeController"
- orientation="VERTICAL" alignment="BASELINE_CENTER">
-	<Label text="Home Page" />
-	<Button fx:id="backBtn" text="BACK" />
-</FlowPane>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1">
 
+	<top>
+		<HBox alignment="CENTER" style="-fx-border-color: #2e8b57;">
+			<Label text="HEADER" />
+		</HBox>
+	</top>
+	<left>
+		<VBox style="-fx-border-color: #2e8b57;">
+			<Label text="NAV" />
+			<Label text="NAV" />
+			<Label text="NAV" />
+		</VBox>
+	</left>
+	<center>
+		<FlowPane  alignment="CENTER" style="-fx-border-color: #2e8b57;">
+			<Label text="BODY" />
+		</FlowPane>
+	</center>
+	<right>
+		<VBox style="-fx-border-color: #2e8b57;">
+			<Label text="VALUE" />
+			<Label text="VALUE" />
+			<Label text="VALUE" />
+		</VBox>
+	</right>
+	<bottom>
+		<HBox alignment="CENTER" style="-fx-border-color: #2e8b57;">
+			<Label text="FOOTER" />
+		</HBox>
+	</bottom>
+</BorderPane>
