@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<FlowPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bicjo.javafx.home.HomeController"
+ orientation="VERTICAL" alignment="BASELINE_CENTER">
+	<Label text="Home Page" />
+	<Button fx:id="backBtn" text="BACK" />
+</FlowPane>
+

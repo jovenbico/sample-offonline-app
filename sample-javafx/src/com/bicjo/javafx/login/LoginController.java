@@ -3,6 +3,8 @@ package com.bicjo.javafx.login;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import com.bicjo.javafx.MainStageManager;
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -22,18 +24,13 @@ public class LoginController implements Initializable {
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-
+		System.out.println("login-controller initialize");
 		loginBtn.setOnAction(event -> {
 			System.out.println(usernameText.getText() + " " + passwordText.getText());
-		});
 
-		// loginBtn.setOnAction(new EventHandler<ActionEvent>() {
-		// @Override
-		// public void handle(ActionEvent event) {
-		// System.out.println(usernameText.getText() + " " +
-		// passwordText.getText());
-		// }
-		// });
+			MainStageManager.getInstance().change(getClass().getResource("../home/HomeView.fxml"));
+
+		});
 
 	}
 
