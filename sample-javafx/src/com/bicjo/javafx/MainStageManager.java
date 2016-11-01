@@ -25,7 +25,10 @@ public class MainStageManager {
 	}
 
 	public MainStageManager initialize(Stage stage) {
+		stage.setResizable(false);
+		stage.setTitle("Welcome");
 		INSTANCE.mainStage = stage;
+
 		return INSTANCE;
 	}
 
@@ -35,7 +38,6 @@ public class MainStageManager {
 			Parent root = FXMLLoader.load(fxmlUrl);
 			Scene scene = new Scene(root, 800, 600);
 
-			mainStage.setTitle("Welcome");
 			mainStage.setScene(scene);
 			mainStage.show();
 
