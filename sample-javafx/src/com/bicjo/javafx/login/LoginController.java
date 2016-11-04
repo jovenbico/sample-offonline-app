@@ -13,7 +13,7 @@ import javafx.scene.control.TextField;
 
 public class LoginController implements Initializable {
 
-	private LoginProps loginProps = new LoginProps();
+	private LoginBean loginBean = new LoginBean();
 
 	@FXML
 	private TextField usernameText;
@@ -27,11 +27,11 @@ public class LoginController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 
-		usernameText.textProperty().bindBidirectional(loginProps.getUsernameProp());
-		passwordText.textProperty().bindBidirectional(loginProps.getPasswordProp());
+		usernameText.textProperty().bindBidirectional(loginBean.getUsername());
+		passwordText.textProperty().bindBidirectional(loginBean.getPassword());
 
 		loginBtn.setOnAction(event -> {
-			System.out.println(loginProps.getBean().toString());
+			System.out.println(loginBean.getModel().toString());
 
 			MainStageManager.getInstance().change(getClass().getResource("../home/HomeView.fxml"));
 
