@@ -59,7 +59,7 @@ public class VistaNavigator {
                     )
                 ));
         } catch (IOException e) {
-            //e.printStackTrace();          /***<----***/
+            e.printStackTrace();          /***<----***/
         }
     }
 
